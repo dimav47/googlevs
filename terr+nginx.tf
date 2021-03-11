@@ -57,7 +57,6 @@ provisioner "remote-exec" {
       type     = "ssh"
       user     = "buh-d072"
       private_key = file("/root/.ssh/id_rsa")
-      host        = self.network_interface[0].access_config[0].nat_ip
     }
   }
 }
